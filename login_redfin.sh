@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-docker run \
+docker run -it --entrypoint /bin/bash \
        -e "BRANCH_NAME=lineage-18.1" \
        -e "DEVICE_LIST=redfin" \
        -e "INCLUDE_PROPRIETARY=false" \
