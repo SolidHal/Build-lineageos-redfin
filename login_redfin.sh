@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 docker run -it --entrypoint /bin/bash \
        -e "BRANCH_NAME=lineage-18.1" \
        -e "DEVICE_LIST=redfin" \
@@ -8,7 +7,7 @@ docker run -it --entrypoint /bin/bash \
        -e "CLEAN_AFTER_BUILD=false" \
        -e "SIGN_BUILDS=true" \
        -e "SIGNATURE_SPOOFING=yes" \
-       -e "CUSTOM_PACKAGES=GmsCore GsfProxy FakeStore MozillaNlpBackend NominatimNlpBackend FDroid FDroidPrivilegedExtension " \
+       -e "CUSTOM_PACKAGES=GmsCore GsfProxy FakeStore MozillaNlpBackend NominatimNlpBackend FDroid FDroidPrivilegedExtension k9mail keepass22androidnonet lawnchair messagease signalmessenger " \
        -e "BOOT_IMG=true" \
        -v "$PWD/src:/srv/src" \
        -v "$PWD/zips:/srv/zips" \

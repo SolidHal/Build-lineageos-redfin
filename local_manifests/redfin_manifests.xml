@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project name="SolidHal/android_device_google_redfin" path="device/google/redfin" remote="github" />
-  <project name="SolidHal/android_device_google_redbull" path="device/google/redbull" remote="github" />
-  <project name="SolidHal/android_kernel_google_redbull" path="kernel/google/redbull" remote="github" />
-  <project name="SolidHal/proprietary_vendor_google" path="vendor/google" remote="github" />
-
-</manifest>
