@@ -6,8 +6,9 @@ docker run -it --entrypoint /bin/bash \
        -e "INCLUDE_PROPRIETARY=false" \
        -e "CLEAN_AFTER_BUILD=false" \
        -e "SIGN_BUILDS=true" \
+       -e "CCACHE_SIZE=100G" \
        -e "SIGNATURE_SPOOFING=yes" \
-       -e "CUSTOM_PACKAGES=GmsCore GsfProxy FakeStore MozillaNlpBackend NominatimNlpBackend FDroid FDroidPrivilegedExtension k9mail keepass22androidnonet lawnchair messagease signalmessenger " \
+       -e "CUSTOM_PACKAGES=GmsCore GsfProxy FakeStore MozillaNlpBackend NominatimNlpBackend FDroid FDroidPrivilegedExtension k9mail keepass2androidnonet lawnchair messagease signalmessenger " \
        -e "BOOT_IMG=true" \
        -v "$PWD/src:/srv/src" \
        -v "$PWD/zips:/srv/zips" \

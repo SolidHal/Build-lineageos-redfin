@@ -5,9 +5,10 @@ docker run \
        -e "BRANCH_NAME=lineage-18.1" \
        -e "DEVICE_LIST=redfin" \
        -e "INCLUDE_PROPRIETARY=true" \
-       -e "CCACHE_SIZE=100G" \
+       -e "REPO_SYNC=true" \
        -e "CLEAN_AFTER_BUILD=false" \
        -e "SIGN_BUILDS=true" \
+       -e "CCACHE_SIZE=100G" \
        -e "SIGNATURE_SPOOFING=yes" \
        -e "CUSTOM_PACKAGES=GmsCore GsfProxy FakeStore MozillaNlpBackend NominatimNlpBackend FDroid FDroidPrivilegedExtension " \
        -e "BOOT_IMG=true" \
